@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crochet Business Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      /* Hero Section */
+      .hero-section {
+        background: linear-gradient(135deg, #6a1b9a 0%, #8e24aa 100%);
+        padding: 120px 0;
+        min-height: 100vh;
+      }
+
+      /* Feature Icon */
+      .feature-icon {
+        width: 64px;
+        height: 64px;
+        background: #8e24aa;
+        color: white;
+        border-radius: 12px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        margin-bottom: 1rem;
+      }
+
+      /* Card Hover Effect */
+      .card {
+        border: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Product Image Styling */
+      .product-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      /* Buttons */
+      .btn-primary,
+      .btn-outline-primary {
+        background-color: #8e24aa;
+        border-color: #8e24aa;
+      }
+
+      .btn-primary:hover,
+      .btn-outline-primary:hover {
+        background-color: #6a1b9a;
+        border-color: #6a1b9a;
+      }
+
+      /* Pricing Section */
+      .pricing-card .btn {
+        margin-top: 20px;
+      }
+
+      /* Contact Section */
+      .form-control {
+        border-radius: 8px;
+      }
+
+      /* Mobile responsiveness for Hero Section */
+      .hero-section h1 {
+        font-size: 2.5rem;
+      }
+
+      /* Card Body for Products */
+      .card-body h5 {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .card-body h6 {
+        color: #8e24aa;
+        font-weight: bold;
+      }
+
+      /* Footer or Contact Section */
+      .footer-section {
+        background-color: #6a1b9a;
+        color: white;
+        padding: 50px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar begins -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand fw-bold text-primary">
+          <i class="bi bi-yarn"></i> Crochet Creations
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary ms-2" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-4">Handcrafted Crochet Creations</h1>
+        <p class="lead mb-4">
+          Discover unique, high-quality crochet pieces made with love and care. Perfect for gifts or treating yourself.
+        </p>
+        <a href="#contact" class="btn btn-light btn-lg">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Our Crochet Creations</h2>
+          <p class="text-muted">Why Choose Our Creations?</p>
+        </div>
+        <div class="row g-4">
+          <!-- Feature 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <div class="feature-icon">
+                <i class="bi bi-yarn"></i>
+              </div>
+              <h4>Handmade with Love</h4>
+              <p class="text-muted">
+                Every piece is carefully handcrafted with the finest yarn.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <div class="feature-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h4>Custom Designs</h4>
+              <p class="text-muted">
+                Choose your own colors and designs for a personalized gift.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <div class="feature-icon">
+                <i class="bi bi-gift"></i>
+              </div>
+              <h4>Perfect for Gifts</h4>
+              <p class="text-muted">
+                Our crochet items make for thoughtful, unique gifts for loved ones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Our Products</h2>
+          <p class="text-muted">Explore our unique crochet items</p>
+        </div>
+        <div class="row g-4">
+          <!-- Product 1 -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="./plushee.jpeg" alt="Product 1" class="product-img">
+              <div class="card-body">
+                <h5 class="card-title">Cute Plushee</h5>
+                <p class="card-text">A beautifully handcrafted plushee toy made from soft wool. Available in various colors.</p>
+                <h6>$25.00</h6>
+                <a href="#contact" class="btn btn-primary w-100">Order Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="./sunflower.jpeg" alt="Product 2" class="product-img">
+              <div class="card-body">
+                <h5 class="card-title">Sunflower Crochet</h5>
+                <p class="card-text">Bring nature’s beauty into your home with this vibrant sunflower crochet piece. Handcrafted with love and attention to detail, this bright and cheerful sunflower is perfect as a decoration, accessory, or thoughtful gift.</p>
+                <h6>$40.00</h6>
+                <a href="#contact" class="btn btn-primary w-100">Order Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="./cute couple.jpeg" alt="Product 3" class="product-img">
+              <div class="card-body">
+                <h5 class="card-title">Romantic Bouquet Bearer Crochet</h5>
+                <p class="card-text">Express your love with our Romantic Bouquet Bearer Crochet. This handwoven figure of a gentleman holding a vibrant bouquet makes a perfect gift for special occasions like anniversaries or Valentine's Day.</p>
+                <h6>$15.00</h6>
+                <a href="#contact" class="btn btn-primary w-100">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="bg-light py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Pricing Plans</h2>
+          <p class="text-muted">Affordable and flexible pricing for every need</p>
+        </div>
+        <div class="row g-4">
+          <!-- Basic Plan -->
+          <div class="col-lg-4">
+            <div class="card pricing-card h-100 p-4">
+              <div class="card-body">
+                <h5 class="text-muted">Basic</h5>
+                <h2 class="display-4 fw-bold mb-4">
+                  $20 <small>/ item</small>
+                </h2>
+                <ul class="list-unstyled mb-4">
+                  <li>Choose from pre-designed crochet items</li>
+                  <li>Handmade with quality yarn</li>
+                </ul>
+                <a class="btn btn-outline-primary w-100" href="#contact">Order Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="col-lg-4">
+            <div class="card pricing-card h-100 p-4">
+              <div class="card-body">
+                <span class="badge bg-primary mb-2">Most Popular</span>
+                <h5 class="text-muted">Premium</h5>
+                <h2 class="display-4 fw-bold mb-4">
+                  $40 <small>/ item</small>
+                </h2>
+                <ul class="list-unstyled mb-4">
+                  <li>Custom design with personalized colors</li>
+                  <li>Free shipping included</li>
+                </ul>
+                <a class="btn btn-primary w-100" href="#contact">Order Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Plan -->
+          <div class="col-lg-4">
+            <div class="card pricing-card h-100 p-4">
+              <div class="card-body">
+                <h5 class="text-muted">Custom</h5>
+                <h2 class="display-4 fw-bold mb-4">
+                  $50 <small>/ item</small>
+                </h2>
+                <ul class="list-unstyled mb-4">
+                  <li>Fully custom crochet items</li>
+                  <li>Choose yarn type, colors, and size</li>
+                  <li>Delivered within 1-2 weeks</li>
+                </ul>
+                <a class="btn btn-outline-primary w-100" href="#contact">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Contact Us</h2>
+          <p class="text-muted">Have a question or want to place an order? Reach out!</p>
+        </div>
+        <form action="#" method="post">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
